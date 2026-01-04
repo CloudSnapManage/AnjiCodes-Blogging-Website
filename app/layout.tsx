@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { M_PLUS_Rounded_1c } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
+const mPlusRounded1c = M_PLUS_Rounded_1c({
+  subsets: ['latin'],
+  weight: ['400', '500', '700', '800'],
+  variable: '--font-m-plus-rounded-1c',
 });
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function RootLayout({
         <link rel="preload" as="image" href="/anji-code.jpeg" />
       </head>
       <body
-        className={`${spaceGrotesk.variable} bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased`}
+        className={`${mPlusRounded1c.variable} bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark antialiased`}
       >
         <div className="min-h-screen flex flex-col">
           <Header />

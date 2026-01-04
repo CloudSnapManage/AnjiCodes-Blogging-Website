@@ -68,17 +68,17 @@ export default function Home() {
               <div className="flex justify-center md:justify-start gap-4">
                 <Link
                   href="/projects"
-                  className="inline-flex items-center gap-2 rounded-lg border-2 border-black bg-transparent text-black px-5 py-3 text-sm font-medium hover:bg-black hover:text-white transition-all duration-300"
+                  className="inline-flex items-center gap-2 rounded-lg border-2 border-primary bg-primary text-white px-5 py-3 text-sm font-medium hover:bg-transparent hover:text-primary transition-all duration-300"
                 >
                   View All Projects
                 </Link>
               </div>
             </div>
             <div className="md:w-1/3 flex justify-center">
-              <div className="hidden md:block hover:transform hover:-translate-y-2 transition-all duration-500 relative w-[180px] h-[280px] border-4 border-black rounded-xl shadow-lg">
-                <Image 
-                  src="/cat_run.gif" 
-                  alt="Profile" 
+              <div className="hidden md:block hover:transform hover:-translate-y-2 transition-all duration-500 relative w-[180px] h-[280px] border-4 border-primary rounded-xl shadow-lg">
+                <Image
+                  src="/anime_hero.gif"
+                  alt="Profile"
                   width={200} 
                   height={280}
                   priority
@@ -98,7 +98,7 @@ export default function Home() {
         <section className="py-12">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white border-2 border-black rounded-xl p-8 text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-xl group">
+              <div className="bg-card-light dark:bg-card-dark border-2 border-primary rounded-xl p-8 text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-xl group">
                 <svg className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <rect x="3" y="3" width="7" height="7" />
                   <rect x="14" y="3" width="7" height="7" />
@@ -106,27 +106,27 @@ export default function Home() {
                   <rect x="3" y="14" width="7" height="7" />
                 </svg>
                 <h3 className="text-4xl font-black mb-2">30</h3>
-                <p className="text-lg font-medium text-black">Projects Built</p>
-                <p className="text-sm text-gray-600 mt-2">One idea per day</p>
+                <p className="text-lg font-medium text-text-light dark:text-text-dark">Projects Built</p>
+                <p className="text-sm text-subtext-light dark:text-subtext-dark mt-2">One idea per day</p>
               </div>
-              <div className="bg-white border-2 border-black rounded-xl p-8 text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-xl group">
+              <div className="bg-card-light dark:bg-card-dark border-2 border-primary rounded-xl p-8 text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-xl group">
                 <svg className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
                 <h3 className="text-4xl font-black mb-2">30</h3>
-                <p className="text-lg font-medium text-black">Days of Coding</p>
-                <p className="text-sm text-gray-600 mt-2">Non-stop learning</p>
+                <p className="text-lg font-medium text-text-light dark:text-text-dark">Days of Coding</p>
+                <p className="text-sm text-subtext-light dark:text-subtext-dark mt-2">Non-stop learning</p>
               </div>
-              <div className="bg-white border-2 border-black rounded-xl p-8 text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-xl group">
+              <div className="bg-card-light dark:bg-card-dark border-2 border-primary rounded-xl p-8 text-center hover:-translate-y-2 transition-all duration-300 hover:shadow-xl group">
                 <svg className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M12 2L2 7l10 5 10-5-10-5z" />
                   <path d="M2 17l10 5 10-5" />
                   <path d="M2 12l10 5 10-5" />
                 </svg>
                 <h3 className="text-4xl font-black mb-2">∞</h3>
-                <p className="text-lg font-medium text-black">Lessons Learned</p>
-                <p className="text-sm text-gray-600 mt-2">Growing every day</p>
+                <p className="text-lg font-medium text-text-light dark:text-text-dark">Lessons Learned</p>
+                <p className="text-sm text-subtext-light dark:text-subtext-dark mt-2">Growing every day</p>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function Home() {
         <section className="py-12">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-3xl font-black tracking-tight">Featured Projects</h3>
-            <Link href="/projects" className="text-sm text-black font-medium hover:text-vibrant-accent transition-colors flex items-center gap-1">
+            <Link href="/projects" className="text-sm text-primary font-medium hover:text-vibrant-accent transition-colors flex items-center gap-1">
               See all projects
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -147,7 +147,7 @@ export default function Home() {
           {loading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="bg-white border-2 border-black rounded-xl p-5 space-y-3 animate-pulse">
+                <div key={i} className="bg-card-light dark:bg-card-dark border-2 border-primary rounded-xl p-5 space-y-3 animate-pulse">
                   <div className="bg-gray-300 h-6 w-16 rounded-full"></div>
                   <div className="bg-gray-300 h-12 rounded"></div>
                   <div className="flex gap-1.5">
@@ -159,7 +159,7 @@ export default function Home() {
               ))}
             </div>
           ) : featuredProjects.length === 0 ? (
-            <div className="py-10 text-gray-600">
+            <div className="py-10 text-subtext-light dark:text-subtext-dark">
               No featured projects yet. Add some in the admin panel!
             </div>
           ) : (
@@ -168,12 +168,12 @@ export default function Home() {
                 <Link
                   key={project.id}
                   href={`/project/${project.id}`}
-                  className="card group block bg-white border-2 border-black rounded-xl overflow-hidden transition-all duration-500 hover:transform hover:-translate-y-1 hover:shadow-xl opacity-0"
+                  className="card group block bg-card-light dark:bg-card-dark border-2 border-primary rounded-xl overflow-hidden transition-all duration-500 hover:transform hover:-translate-y-1 hover:shadow-xl opacity-0"
                   style={{ animation: `fadeInUp 0.6s ease-out ${index * 0.1}s forwards` }}
                 >
                   {/* Project Image */}
                   {project.image_url && (
-                    <div className="relative w-full h-64 bg-gray-100 overflow-hidden">
+                    <div className="relative w-full h-64 bg-background-light dark:bg-background-dark overflow-hidden">
                       {project.image_url.startsWith('data:') ? (
                         // Base64 images use regular img tag
                         <img
@@ -198,14 +198,14 @@ export default function Home() {
                     {/* Day Badge */}
                     {project.day_number && (
                       <div className="inline-block">
-                        <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-medium">
+                        <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
                           Day {project.day_number}
                         </span>
                       </div>
                     )}
 
                     {/* Title */}
-                    <h4 className="text-lg font-black tracking-tight text-black leading-tight group-hover:text-vibrant-accent transition-colors min-h-[3rem]">
+                    <h4 className="text-lg font-black tracking-tight text-text-light dark:text-text-dark leading-tight group-hover:text-vibrant-accent transition-colors min-h-[3rem]">
                       {project.title}
                     </h4>
 
@@ -214,7 +214,7 @@ export default function Home() {
                       {project.tech_stack.slice(0, 3).map((tech, i) => (
                         <span
                           key={i}
-                          className="text-xs border border-black bg-transparent text-black px-2 py-0.5 rounded"
+                          className="text-xs border border-primary bg-transparent text-primary px-2 py-0.5 rounded"
                         >
                           {tech}
                         </span>
@@ -222,7 +222,7 @@ export default function Home() {
                     </div>
 
                     {/* View Arrow */}
-                    <div className="flex items-center text-xs text-black font-medium pt-1 group-hover:text-vibrant-accent transition-colors">
+                    <div className="flex items-center text-xs text-primary font-medium pt-1 group-hover:text-vibrant-accent transition-colors">
                       View Project
                       <svg
                         className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"

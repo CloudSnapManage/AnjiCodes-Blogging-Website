@@ -10,16 +10,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#000000',
-        'vibrant-accent': '#FF6B6B',
-        'background-light': '#f7f7f7',
-        'background-dark': '#191919',
-        'card-light': '#D8E4F4',
-        'card-dark': '#2a1a3a',
-        'text-light': '#141118',
-        'text-dark': '#e0e0e0',
-        'subtext-light': '#756189',
-        'subtext-dark': '#a092b0',
+        primary: '#FF69B4',
+        'vibrant-accent': '#FF69B4', // Bright pink
+        'background-light': '#FFF5E1', // Soft cream
+        'background-dark': '#1A202C', // Deep navy
+        'card-light': '#E6E6FA', // Soft lavender
+        'card-dark': '#4A3F6B', // Darker purple
+        'text-light': '#2D3748', // Dark grey
+        'text-dark': '#E2E8F0', // Light grey
+        'subtext-light': '#718096', // Medium grey
+        'subtext-dark': '#A39CB5', // Lighter purple
         'muted-pastel-1': '#F4E8D1',
         'muted-pastel-2': '#D8BFD8',
         'muted-pastel-3': '#B0E0E6',
@@ -29,8 +29,8 @@ const config: Config = {
         'subtle-text-dark': '#a0a0a0',
       },
       fontFamily: {
-        display: ['Space Grotesk', 'sans-serif'],
-        body: ['Poppins', 'sans-serif'],
+        display: ['var(--font-m-plus-rounded-1c)', 'sans-serif'],
+        body: ['var(--font-m-plus-rounded-1c)', 'sans-serif'],
         code: ['Fira Code', 'monospace'],
       },
       borderRadius: {

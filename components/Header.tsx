@@ -9,12 +9,12 @@ export default function Header() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-10 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-b-2 border-primary">
       <div className="px-4 md:px-10 lg:px-20 mx-auto max-w-7xl">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <p className="text-3xl font-black tracking-tighter text-text-light dark:text-text-dark cursor-pointer">
+              <p className="text-3xl font-black tracking-tighter text-primary dark:text-text-dark cursor-pointer">
                 Anji Codes
               </p>
             </Link>

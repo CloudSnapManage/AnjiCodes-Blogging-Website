@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-background-light dark:bg-background-dark py-10">
+    <footer className="bg-background-light dark:bg-background-dark py-10 border-t-2 border-primary">
       <div className="px-4 md:px-10 lg:px-20 mx-auto max-w-7xl">
         <div className="flex flex-col items-center gap-6">
           <div className="flex justify-center gap-6">
@@ -9,7 +9,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-vibrant-accent hover:text-[#d8e4f4] transition-colors duration-300"
+              className="text-primary hover:text-vibrant-accent transition-colors duration-300"
             >
               <svg
                 className="w-6 h-6"
